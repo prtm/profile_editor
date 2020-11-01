@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="profile_editor" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>profile_editor</title>
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.css"
+      integrity="sha512-w+u2vZqMNUVngx+0GVZYM21Qm093kAexjueWOv9e9nIeYJb1iEfiHC7Y+VvmP/tviQyA5IR32mwN/5hTEJx6Ng=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.js"
+      integrity="sha512-9pGiHYK23sqK5Zm0oF45sNBAX/JqbZEP7bSDHyt+nT3GddF+VFIcYNqREt0GDpmFVZI3LZ17Zu9nMMc9iktkCw=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+    </script>
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>
