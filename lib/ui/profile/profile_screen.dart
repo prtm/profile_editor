@@ -164,7 +164,7 @@ class ProfilePlaceholder extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(4),
           child: Image.asset(
-            'person_placeholder.png',
+            'assets/person_placeholder.png',
             height: profileImageSizeContainer,
             width: profileImageSizeContainer,
           ),
